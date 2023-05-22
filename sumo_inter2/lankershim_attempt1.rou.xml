@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+	<vType accel="3.0" decel="6.0" id="CarA" length="5.0" minGap="2.5" maxSpeed="50.0" sigma="0.5" />
+
+	<vType accel="2.0" decel="6.0" id="CarB" length="7.5" minGap="2.5" maxSpeed="50.0" sigma="0.5" />
+
+	<!-- Starting from bottom -->
+	<route id="0_5" edges="0 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 L1" /> <!-- Straight N-S -->
+	<route id="0_4r" edges="0 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 K1" /> <!-- Right intersect 4 N-S -->
+	<route id="0_4l" edges="0 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 K3" /> <!-- Left intersect 4 N-S -->
+	<route id="0_3r" edges="0 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 I1" /> <!-- rIGHT intersect 3 N-S -->
+	<route id="0_3l" edges="0 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 I3" /> <!-- Left intersect 3 N-S -->
+	<route id="0_2r" edges="0 A1 A2 C1 D1 E1" />
+	<route id="0_2l" edges="0 A1 A2 C1 D1 E3" />
+	<!-- Intersection 1 has no right turns (off-ramp) -->
+
+	<!-- Starting from intersection 0 -->
+	<!-- right side -->
+	<route id="0r_0" edges="Z2 1" />
+	<route id="0r_l" edges="Z2 Z3" />
+	<route id="0r_2l" edges="Z2 A1 A2 C1 D1 E3" />
+	<route id="0r_2r" edges="Z2 A1 A2 C1 D1 E1" />
+	<route id="0r_3l" edges="Z2 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 I3" />
+	<route id="0r_3r" edges="Z2 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 I1" />
+	<route id="0r_4l" edges="Z2 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 K3" />
+	<route id="0r_4r" edges="Z2 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 K1" /> 
+	<route id="0r_5" edges="Z2 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 L1" />
+
+	<!-- left side -->
+	<route id="0l_0" edges="Z4 1" />
+	<route id="0l_l" edges="Z4 Z1" />
+	<route id="0l_2l" edges="Z4 A1 A2 C1 D1 E3" />
+	<route id="0l_2r" edges="Z4 A1 A2 C1 D1 E1" />
+	<route id="0l_3l" edges="Z4 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 I3" />
+	<route id="0l_3r" edges="Z4 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 I1" />
+	<route id="0l_4l" edges="Z4 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 K3" />
+	<route id="0l_4r" edges="Z4 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 K1" /> 
+	<route id="0l_5" edges="Z4 A1 A2 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 L1" />
+	
+
+	<!-- Starting from intersection 1 -->
+	<route id="1_0" edges="B1 A3 A4 1" />
+	<route id="1_0l" edges="B1 A3 A4 Z3"/>
+	<route id="1_0r" edges="B1 A3 A4 Z1"/>
+	<route id="1_5" edges="B1 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 L1" /> <!-- Straight N-S -->
+	<route id="1_4r" edges="B1 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 K1" /> <!-- Right intersect 4 N-S -->
+	<route id="1_4l" edges="B1 C1 D1 F1 F2 F3 H1 H2 H3 J1 J2 K3" /> <!-- Left intersect 4 N-S -->
+	<route id="1_3r" edges="B1 C1 D1 F1 F2 F3 H1 H2 H3 I1" /> <!-- rIGHT intersect 3 N-S -->
+	<route id="1_3l" edges="B1 C1 D1 F1 F2 F3 H1 H2 H3 I3" /> <!-- Left intersect 3 N-S -->
+	<route id="1_2r" edges="B1 C1 D1 E1" />
+	<route id="1_2l" edges="B1 C1 D1 E3" />
+
+	<!-- Starting from intersection 2 -->
+	<!-- right side -->
+	<route id="2r_l" edges="E2 E3" />
+	<route id="2r_0" edges="E2 D2 C2 A3 A4 1" />
+	<route id="2r_0l" edges="E2 D2 C2 A3 A4 Z3"/>
+	<route id="2r_04" edges="E2 D2 C2 A3 A4 Z1"/>
+	<route id="2r_5" edges="E2 F1 F2 F3 H1 H2 H3 J1 J2 L1" /> <!-- Straight N-S -->
+	<route id="2r_4r" edges="E2 F1 F2 F3 H1 H2 H3 J1 J2 K1" /> <!-- Right intersect 4 N-S -->
+	<route id="2r_4l" edges="E2 F1 F2 F3 H1 H2 H3 J1 J2 K3" /> <!-- Left intersect 4 N-S -->
+	<route id="2r_3r" edges="E2 F1 F2 F3 H1 H2 H3 I1" /> <!-- rIGHT intersect 3 N-S -->
+	<route id="2r_3l" edges="E2 F1 F2 F3 H1 H2 H3 I3" /> <!-- Left intersect 3 N-S -->
+
+	<!-- left side -->
+	<route id="2l_r" edges="E4 E1" />
+	<route id="2l_0" edges="E4 D2 C2 A3 A4 1" />
+	<route id="2l_0l" edges="E4 D2 C2 A3 A4 Z3"/>
+	<route id="2l_04" edges="E4 D2 C2 A3 A4 Z1"/>
+	<route id="2l_5" edges="E4 F1 F2 F3 H1 H2 H3 J1 J2 L1" /> <!-- Straight N-S -->
+	<route id="2l_4r" edges="E4 F1 F2 F3 H1 H2 H3 J1 J2 K1" /> <!-- Right intersect 4 N-S -->
+	<route id="2l_4l" edges="E4 F1 F2 F3 H1 H2 H3 J1 J2 K3" /> <!-- Left intersect 4 N-S -->
+	<route id="2l_3r" edges="E4 F1 F2 F3 H1 H2 H3 I1" /> <!-- rIGHT intersect 3 N-S -->
+	<route id="2l_3l" edges="E4 F1 F2 F3 H1 H2 H3 I3" /> <!-- Left intersect 3 N-S -->
+
+	<!-- Starting from intersection 3 -->
+	<!-- right side -->
+	<route id="3r_l" edges="I2 I3" />
+	<route id="3r_0" edges="I2 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 1" />
+	<route id="3r_0l" edges="I2 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z3" />
+	<route id="3r_0r" edges="I2 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z1" />
+	<route id="3r_2l" edges="I2 H4 H5 H6 F4 F5 F6 E3" />
+	<route id="3r_2r" edges="I2 H4 H5 H6 F4 F5 F6 E1" />
+	<route id="3r_5" edges="I2 J1 J2 L1" />
+	<route id="3r_4r" edges="I2 J1 J2 K1" />
+	<route id="3r_4l" edges="I2 J1 J2 K3" />
+
+	<!-- left side -->
+	<route id="3l_r" edges="I4 I1" />
+	<route id="3l_0" edges="I4 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 1" />
+	<route id="3l_0l" edges="I4 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z3" />
+	<route id="3l_0r" edges="I4 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z1" />
+	<route id="3l_2l" edges="I4 H4 H5 H6 F4 F5 F6 E3" />
+	<route id="3l_2r" edges="I4 H4 H5 H6 F4 F5 F6 E1" />
+	<route id="3l_5" edges="I4 J1 J2 L1" />
+	<route id="3l_4r" edges="I4 J1 J2 K1" />
+	<route id="3l_4l" edges="I4 J1 J2 K3" />
+
+	<!-- Starting from intersection 4 -->
+	<!-- right side -->
+	<route id="4r_l" edges="K2 K3" />
+	<route id="4r_0" edges="K2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 1" />
+	<route id="4r_0l" edges="K2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z3" />
+	<route id="4r_0r" edges="K2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z1" />
+	<route id="4r_2l" edges="K2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 E3" />
+	<route id="4r_2r" edges="K2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 E1" />
+	<route id="4r_3l" edges="K2 J3 J4 J5 J6 I3" />
+	<route id="4r_3r" edges="K2 J3 J4 J5 J6 I1" />
+	<route id="4r_5" edges="K2 L1" />
+
+	<!-- left side -->
+	<route id="4l_r" edges="K4 K1" />
+	<route id="4l_0" edges="K4 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 1" />
+	<route id="4l_0l" edges="K4 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z3"/>
+	<route id="4l_0r" edges="K4 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z1"/>
+	<route id="4l_2l" edges="K4 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 E3" />
+	<route id="4l_2r" edges="K4 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 E1" />
+	<route id="4l_3l" edges="K4 J3 J4 J5 J6 I3" />
+	<route id="4l_3r" edges="K4 J3 J4 J5 J6 I1" />
+	<route id="4l_5" edges="K4 L1" />
+
+	<!-- Southward -->
+	<route id="5_0" edges="L2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 1" />
+	<route id="5_0l" edges="L2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z3"/>
+	<route id="5_0r" edges="L2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 D2 C2 A3 A4 Z1"/>
+	<route id="5_2l" edges="L2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 E3" />
+	<route id="5_2r" edges="L2 J3 J4 J5 J6 H4 H5 H6 F4 F5 F6 E1" />
+	<route id="5_3l" edges="L2 J3 J4 J5 J6 I3" />
+	<route id="5_3r" edges="L2 J3 J4 J5 J6 I1" />
+	<route id="5_4l" edges="L2 K3" />
+	<route id="5_4r" edges="L2 K1" />
+
+	
+
+	<!-- Flow through intersect 0 -->
+	<flow id="01" type="CarA" begin="0" probability="0.1" route="0_5"/>
+	<flow id="02" type="CarA" begin="0" probability="0.11" route="0_4l"/>
+	<flow id="03" type="CarA" begin="0" probability="0.12" route="0_4r"/>
+	<flow id="04" type="CarA" begin="0" probability="0.13" route="0_3l"/>
+	<flow id="05" type="CarA" begin="0" probability="0.14" route="0_3r"/>
+	<flow id="06" type="CarA" begin="0" probability="0.15" route="0_2l"/>
+	<flow id="07" type="CarA" begin="0" probability="0.16" route="0_2r"/>
+	<flow id="08" type="CarA" begin="0" probability="0.17" route="0r_0"/>
+	<flow id="09" type="CarA" begin="0" probability="0.18" route="0r_5"/>
+	<flow id="10" type="CarA" begin="0" probability="0.19" route="0r_4l"/>
+	<flow id="11" type="CarA" begin="0" probability="0.2" route="0r_4r"/>
+	<flow id="12" type="CarA" begin="0" probability="0.21" route="0r_3l"/>
+	<flow id="13" type="CarA" begin="0" probability="0.22" route="0r_3r"/>
+	<flow id="14" type="CarA" begin="0" probability="0.23" route="0r_2l"/>
+	<flow id="15" type="CarA" begin="0" probability="0.24" route="0r_2r"/>
+	<flow id="16" type="CarA" begin="0" probability="0.25" route="0l_0"/>
+	<flow id="17" type="CarA" begin="0" probability="0.1" route="0l_5"/>
+	<flow id="18" type="CarA" begin="0" probability="0.1" route="0l_4l"/>
+	<flow id="19" type="CarA" begin="0" probability="0.1" route="0l_4r"/>
+	<flow id="20" type="CarA" begin="0" probability="0.1" route="0l_3l"/>
+	<flow id="21" type="CarA" begin="0" probability="0.1" route="0l_3r"/>
+	<flow id="22" type="CarA" begin="0" probability="0.1" route="0l_2l"/>
+	<flow id="23" type="CarA" begin="0" probability="0.1" route="0l_2r"/>
+
+
+</routes>

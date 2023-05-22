@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+	<vType accel="3.0" decel="6.0" id="CarA" length="5.0" minGap="2.5" maxSpeed="100.0" desiredMaxSpeed="11.3" speedFactor="normc(1, 0.69, 0.75, 2)" sigma="0.5" />
+
+
+	<!-- 57 300 182 609 63 250 29 41 137 730 356 70 = 2824-->
+
+
+	<route id="north_str" edges="A1 C2" /> 
+	<route id="north_right" edges="A1 B2" />
+	<route id="north_left" edges="A1 D2" />
+	
+	<route id="east_str" edges="D1 B2" />
+	<route id="east_right" edges="D1 A2" />
+	<route id="east_left" edges="D1 C2" />
+
+	<route id="west_str" edges="B1 D2" />
+	<route id="west_right" edges="B1 C2" />
+	<route id="west_left" edges="B1 A2" />
+
+	<route id="south_str" edges="C1 A2" />
+	<route id="south_right" edges="C1 D2" />
+	<route id="south_left" edges="C1 B2" />
+
+
+    <!--    
+	<flow id="ns" type="CarA" begin="0" probability="0.215" route="north_str"/>
+	<flow id="nr" type="CarA" begin="0" probability="0.088" route="north_right"/>
+	<flow id="nl" type="CarA" begin="0" probability="0.022" route="north_left"/>
+	<flow id="es" type="CarA" begin="0" probability="0.020" route="east_str"/>
+	<flow id="er" type="CarA" begin="0" probability="0.064" route="east_right"/>
+	<flow id="el" type="CarA" begin="0" probability="0.106" route="east_left"/>
+	<flow id="ws" type="CarA" begin="0" probability="0.010" route="west_str"/>
+	<flow id="wr" type="CarA" begin="0" probability="0.049" route="west_right"/>
+	<flow id="wl" type="CarA" begin="0" probability="0.015" route="west_left"/>
+	<flow id="ss" type="CarA" begin="0" probability="0.258" route="south_str"/>
+	<flow id="sr" type="CarA" begin="0" probability="0.025" route="south_right"/>
+	<flow id="sl" type="CarA" begin="0" probability="0.126" route="south_left"/>
+    -->
+	<flow id="ns" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="609" route="north_str"/>
+	<flow id="nr" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="250" route="north_right"/>
+	<flow id="nl" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="63" route="north_left"/>
+	<flow id="es" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="57" route="east_str"/>
+	<flow id="er" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="182" route="east_right"/>
+	<flow id="el" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="300" route="east_left"/>
+	<flow id="ws" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="29" route="west_str"/>
+	<flow id="wr" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="137" route="west_right"/>
+	<flow id="wl" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="41" route="west_left"/>
+	<flow id="ss" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="730" route="south_str"/>
+	<flow id="sr" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="70" route="south_right"/>
+	<flow id="sl" type="CarA" departSpeed="max" departPos="base" departLane="best" begin="0" end="1800" number="356" route="south_left"/>
+</routes>
